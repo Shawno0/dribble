@@ -1,0 +1,25 @@
+{
+  "name": "dribble",
+  "private": true,
+  "packageManager": "npm@10",
+  "workspaces": ["packages/*", "examples/*", "tooling/*"],
+  "scripts": {
+  "build": "npm --workspaces run build --if-present",
+  "dev": "npm run build && npm --workspace @dribble/basic-counter run dev",
+  "build:examples": "npm --workspace @dribble/basic-counter run build --if-present",
+  "lint": "npm --workspaces run lint --if-present",
+    "format": "prettier -w .",
+  "typecheck": "npm --workspaces run typecheck --if-present",
+  "test": "npm --workspaces run test --if-present"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.3.3",
+    "tsup": "^8.0.1",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}

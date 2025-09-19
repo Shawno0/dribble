@@ -1,0 +1,15 @@
+export ephemeral Home() {
+  const title = 'Welcome to Dribble';
+
+  render(
+    <header>
+      <h1>@title</h1>
+    </header>
+    <main>
+      <p>Try navigating to /items/2</p>
+    </main>
+    <footer>
+      <small>Client-rendered only</small>
+    </footer>
+  );
+}

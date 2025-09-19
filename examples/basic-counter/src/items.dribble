@@ -1,0 +1,10 @@
+export persistent Items(params?: { id?: number }) {
+    const itemId = params?.id ?? 0;
+
+    render(
+        <div>@itemId</div>
+        @if (itemId > 0) {
+            <span>Item @itemId</span>
+        }
+    );
+}

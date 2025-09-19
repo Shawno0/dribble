@@ -1,0 +1,10 @@
+{
+  "extends": "../../tooling/tsconfigs/tsconfig.app.json",
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.dribble", "vite.config.ts"],
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "plugins": [
+      { "name": "@dribble/ts-plugin-dribble" }
+    ]
+  }
+}

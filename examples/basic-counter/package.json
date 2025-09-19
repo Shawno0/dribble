@@ -1,0 +1,23 @@
+{
+  "name": "@dribble/basic-counter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile:dribble": "node ./scripts/compile-dribble.mjs",
+    "predev": "npm run compile:dribble",
+    "prebuild": "npm run compile:dribble",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "typescript": "^5.4.0",
+  "@dribble/compiler": "*",
+  "@dribble/ts-plugin-dribble": "*"
+  },
+  "dependencies": {
+  "@dribble/shared": "*",
+  "@dribble/runtime-client": "*"
+  }
+}

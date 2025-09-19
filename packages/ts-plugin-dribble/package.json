@@ -1,0 +1,23 @@
+{
+  "name": "@dribble/ts-plugin-dribble",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.cts --format cjs --sourcemap",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@dribble/compiler": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "tsup": "^8.0.1"
+  }
+}

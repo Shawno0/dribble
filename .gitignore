@@ -1,0 +1,8 @@
+node_modules
+coverage
+.DS_Store
+dist
+*.log
+.tmp
+.vscode
+/.plans

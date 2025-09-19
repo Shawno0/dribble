@@ -1,0 +1,7 @@
+export ephemeral Home() {
+    render(
+        <header>Dribble</header>
+        <main>Hello Home</main>
+        <footer>2025</footer>
+    );
+}
